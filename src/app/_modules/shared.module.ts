@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ToastrModule } from 'ngx-toastr';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 
 const MODULES: any[] = [
   TooltipModule.forRoot(),
@@ -10,6 +12,8 @@ const MODULES: any[] = [
   ToastrModule.forRoot({
     positionClass: 'toast-bottom-right',
   }),
+  TabsModule.forRoot(),
+  NgxGalleryModule,
 ];
 
 @NgModule({
